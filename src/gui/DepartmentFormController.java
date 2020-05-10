@@ -94,7 +94,7 @@ public class DepartmentFormController implements Initializable {
 		
 		obj.setId(gui.util.Utils.tryParseToInt(txtId.getText()));
 		
-		if (txtName.getText() == null || txtName.getText().trim().contentEquals("")) {
+		if (txtName.getText() == null || txtName.getText().trim().equals("")) {
 			exception.addError("name", "Campo nome não pode ser vazio");
 		}
 		obj.setName(txtName.getText());
